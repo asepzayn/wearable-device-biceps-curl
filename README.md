@@ -1,12 +1,9 @@
-# 💪 Sistem Bantu Wearable untuk Latihan Angkat Beban (Biceps Curl)
+# Sistem Bantu Wearable untuk Latihan Angkat Beban (Biceps Curl)
 
 ---
 
 ## 📖 Deskripsi Proyek
-Proyek ini mengembangkan **sistem bantu wearable** untuk membantu pengguna dalam latihan **standing dumbbell curl**.  
-Sistem menggunakan **sensor MPU6050** untuk membaca data gerakan, lalu mengolahnya dengan algoritma **Random Forest** pada mikrokontroler **ESP32**.  
-
-Hasil klasifikasi digunakan untuk memberikan **umpan balik real-time** melalui **buzzer**, sehingga pengguna tahu apakah gerakan yang dilakukan sudah benar atau masih salah.
+Proyek ini mengembangkan **sistem bantu wearable** untuk membantu pengguna dalam latihan **standing dumbbell curl**. Sistem menggunakan **sensor MPU6050** untuk membaca data gerakan, lalu mengolahnya dengan algoritma **Random Forest** pada mikrokontroler **ESP32**. Hasil klasifikasi digunakan untuk memberikan **umpan balik real-time** melalui **buzzer**, sehingga pengguna tahu apakah gerakan yang dilakukan sudah benar atau masih salah.
 
 ---
 
