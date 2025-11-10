@@ -27,8 +27,7 @@ Proyek ini mengembangkan **sistem bantu wearable** untuk membantu pengguna dalam
 
 ## 🧩 Arsitektur Sistem
 
-Sistem bantu wearable ini terdiri dari **tiga sensor MPU6050**, **mikrokontroler ESP32**, dan **buzzer** sebagai pemberi umpan balik.  
-Semua komponen saling terhubung menggunakan **komunikasi nirkabel ESP-NOW**.
+Sistem bantu wearable ini terdiri dari **tiga sensor MPU6050**, **mikrokontroler ESP32**, dan **buzzer** sebagai pemberi umpan balik. Semua komponen saling terhubung menggunakan **komunikasi nirkabel ESP-NOW**.
 
 ### 🔧 Diagram Alur Sistem
 ```text
@@ -75,17 +74,17 @@ Bagian ini menjelaskan langkah-langkah untuk menyiapkan lingkungan proyek, menja
 ### 1. Persiapan Lingkungan Python
 
 #### a. Pastikan Python Terpasang
-Pastikan kamu telah menginstal **Python 3.8** atau versi lebih baru.  
+Pastikan anda telah menginstal **Python 3.8** atau versi lebih baru.  
 Cek versi Python dengan perintah:
 ```bash
 python --version
 ```
 
 #### b. Clone Repository
-Unduh project ke komputer kamu dengan perintah berikut:
+Unduh project ke komputer anda dengan perintah berikut:
 ```bash
 git clone https://github.com/asepzayn/wearable-device-biceps-curl.git
-cd ai-wearable-biceps-curl
+cd wearable-device-biceps-curl
 ```
 
 #### c. Install library yang diperlukan
