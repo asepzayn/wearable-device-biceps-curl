@@ -114,7 +114,7 @@ Akurasi Model: 0.964
 ```
 Model yang sudah dilatih akan tersimpan sebagai file:
 ```bash
-src/model.pkl
+src/model_RF.h
 ```
 
 ### 3. Implementasi pada ESP32
@@ -132,7 +132,7 @@ Konversi model.pkl agar bisa dijalankan di mikrokontroler, dengan opsi:
 - Konversi logika Random Forest menjadi rule-based decision tree sederhana di Arduino IDE.
 
 #### c. Upload Kode ke ESP32
-Gunakan Arduino IDE atau Thonny (MicroPython) untuk mengunggah kode. Pastikan semua sensor dan pin terhubung sesuai diagram pada folder "/hardaware/"
+Gunakan Arduino IDE atau Thonny (MicroPython) untuk mengunggah kode. Pastikan semua sensor dan pin terhubung sesuai diagram pada folder "/hardware/"
 
 #### d. Jalankan Sistem
 1. Nyalakan perangkat.
