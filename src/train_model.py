@@ -13,16 +13,12 @@ import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 from sklearn import tree
 
-data_kelas_benar = pd.read_csv('/content/gerakan-benar.csv')
-data_kelas_salah = pd.read_csv('/content/gerakan-salah.csv')
+data_kelas_benar = pd.read_csv('/data/gerakan-benar.csv')
+data_kelas_salah = pd.read_csv('/data/gerakan-salah.csv')
 
 data_kelas_benar.info()
 
 data_kelas_salah.info()
-
-data_kelas_benar.tail()
-
-data_kelas_salah.tail()
 
 arr_data_kelas_benar = np.array(data_kelas_benar)
 arr_data_kelas_salah = np.array(data_kelas_salah)
@@ -38,7 +34,6 @@ df_avg_kelas_benar = pd.DataFrame(data=arr_data_kelas_benar,
                                         'avg_giro2_x','avg_giro2_y','avg_giro2_z',
                                         'avg_acc3_x','avg_acc3_y','avg_acc3_z',
                                         'avg_giro3_x','avg_giro3_y','avg_giro3_z'])
-df_avg_kelas_benar.head()
 
 df_avg_kelas_salah = pd.DataFrame(data=arr_data_kelas_salah,
                                  columns=['avg_acc1_x','avg_acc1_y','avg_acc1_z',
@@ -47,14 +42,12 @@ df_avg_kelas_salah = pd.DataFrame(data=arr_data_kelas_salah,
                                         'avg_giro2_x','avg_giro2_y','avg_giro2_z',
                                         'avg_acc3_x','avg_acc3_y','avg_acc3_z',
                                         'avg_giro3_x','avg_giro3_y','avg_giro3_z'])
-df_avg_kelas_salah.head()
 
 df_avg_kelas_benar['kelas'] = 'benar'
 df_avg_kelas_salah['kelas'] = 'salah'
 
-df_avg_kelas_benar.tail()
-
-df_avg_kelas_salah.tail()
+df_avg_kelas_benar.head()
+df_avg_kelas_salah.head()
 
 df_concat = pd.concat([df_avg_kelas_benar[:70], df_avg_kelas_salah[:70]], ignore_index=True)
 df_concat
@@ -114,7 +107,6 @@ data_uji
 
 data_uji.to_csv('data_uji.csv')
 
-!pip install micromlgen
 
 from micromlgen import port
 
@@ -135,5 +127,4 @@ modelFile.close()
 #Let's print the size of the .h file
 import os
 model_h_size = os.path.getsize("model_RF.h")
-print(f"Header file, model_z.h, is {model_h_size:,} bytes.")
-print("\nOpen the side panel (refresh if needed). Double click model.h to download the file.")
+print(f"Header file, model_RF.h, is {model_h_size:,} bytes.")
