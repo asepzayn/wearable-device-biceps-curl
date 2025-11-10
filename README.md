@@ -1,4 +1,4 @@
-# Sistem Bantu Wearable untuk Latihan Angkat Beban (Biceps Curl)
+# Sistem Bantu Wearable untuk Latihan Angkat Beban (Standing Dumbbell Curl)
 
 ---
 
