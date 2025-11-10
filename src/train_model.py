@@ -91,7 +91,7 @@ plt.subplots(figsize=(15,10))
 tree.plot_tree(rf_model.estimators_[1], filled=True)
 plt.show()
 
-from sklearn.metrics import ConfusionMatrixDisplay, confusion_matrix
+from sklearn.metrics import ConfusionMatrixDisplay, confusion_matrix, classification_report
 cm = confusion_matrix(y_test, predictions)
 
 # Tampilkan confusion matrix dengan ConfusionMatrixDisplay
