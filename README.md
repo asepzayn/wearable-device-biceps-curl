@@ -26,15 +26,24 @@ Proyek ini mengembangkan **sistem bantu wearable** untuk membantu pengguna dalam
 ---
 
 ## 🧩 Arsitektur Sistem
-[MPU6050 Wrist] ─┐
-                  ├── (ESP-NOW Wireless)
-[MPU6050 Upper Arm] ┘
-                      ↓
-                [ESP32 Master]
-                      ↓
-                 [Random Forest Model]
-                      ↓
-                  [Buzzer Feedback]
+
+Sistem bantu wearable ini terdiri dari **tiga sensor MPU6050**, **mikrokontroler ESP32**, dan **buzzer** sebagai pemberi umpan balik.  
+Semua komponen saling terhubung menggunakan **komunikasi nirkabel ESP-NOW**.
+
+### 🔧 Diagram Alur Sistem
+```text
+[MPU6050 - Pergelangan Tangan] ─┐
+                                │
+                                ├── (ESP-NOW Wireless Data Transmission)
+                                │
+[MPU6050 - Lengan Atas] ────────┘
+                 ↓
+           [ESP32 Master Controller]
+                 ↓
+        [Random Forest Model (AI)]
+                 ↓
+           [Buzzer Feedback System]
+```
 
 
 ---
